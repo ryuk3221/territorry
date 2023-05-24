@@ -1,4 +1,13 @@
 @font-face{
+  font-family: 'Roboto-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: local('Roboto-Light'),
+       url('../fonts/Roboto-Light.woff') format('woff');  
+  font-display: swap;
+}
+
+@font-face{
   font-family: 'Roboto-Regular';
   font-weight: 400;
   font-style: normal;
@@ -19,7 +28,7 @@
 }
 @font-face{
   font-family: 'Roboto-Bold';
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
   src: local('Roboto-Bold'),
   url('../fonts/Roboto-Bold.woff2') format('woff2'),

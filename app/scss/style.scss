@@ -4,6 +4,14 @@
 @import "_global";
 @import "_libs";
 
+
+.burger-span1--active{
+  transform: translateY(18px) rotate(45deg);
+}
+
+.burger-span2--active{
+  transform: translateY(-18px) rotate(-45deg);
+}
 .header {
   background-position: center;
   background-repeat: no-repeat;
@@ -17,16 +25,36 @@
     justify-content: space-between;
     background-color: rgba(217, 217, 217, 0.2);
   }
-  &__burger {
-    padding: 0;
-    border: none;
+  &__burger{
+    height: 40px;
+    width: 40px;
+    position: relative;
     background-color: transparent;
+    border: none;
+    padding: 0;
+    display: block;
     cursor: pointer;
-    z-index: 2;
-    transition: 0.4s;
-    &:hover {
-      transform: scale(1.3);
+    .burger-span1, .burger-span2, .burger-span3 {
+      width: 40px;
+      height: 4px;
+      background-color: #EBE9E3;
+      position: absolute;
+      transition: .2s;
+      &:nth-child(1){
+        top: 0;
+        left: 0;
+      }
+      &:nth-child(2) {
+        top:50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+      &:nth-child(3) {
+        bottom: 0;
+        left: 0;
+      }
     }
+    
   }
   &__contacts {
     display: flex;
@@ -137,6 +165,47 @@
       color: #404040;
     }
   }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__footer-button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    letter-spacing: -0.02em;
+    color: #404040;
+    @extend %roboto-500;
+    position: relative;
+    cursor: pointer;
+    &::after{
+      position: absolute;
+      content: '';
+      width: 63px;
+      height: 47px;
+      background-image: url(../images/arrow-right.svg);
+      top: -5px;
+      right: -74px;
+    }
+  }
+  &__footer-box {
+    display: flex;
+    flex-direction: column;
+  }
+  &__footer-text {
+    font-size: 60px;
+    color: #404040;
+    letter-spacing: -0.09em;
+    @extend %roboto-500;
+  }
+  &__footer-num {
+    @extend %bebas-400;
+    font-size: 300px;
+    letter-spacing: -0.01em;
+    color: rgba(0, 0, 0, 0.75);
+  }
 }
 
 .catalog {
@@ -226,8 +295,61 @@
 .price {
   height: 100vh;
   background-color: #404040;
-  padding: 12git 0px 0;
+  padding: 100px 0px 0;
+  &__title {
+    font-size: 50px;
+    line-height: 59px;
+    @extend %roboto-500;
+    letter-spacing: -0.08em;
+    color: #EBE9E3;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 180px;
+      height: 1px;
+      background-color: #EBE9E3;
+      top: -5px;
+      left: 0;
+    }
+  }
   &__inner {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    border: 2px solid #EBE9E3;
+    padding: 56px 25px 44px;
+    text-align: center;
+    color: #EBE9E3;
+    max-width: 460px;
+    &:nth-child(2) {
+      transform: translateY(-100px)
+    }
+  }
+  &__item-title {
+    @extend %roboto-500;
+    font-size: 29px;
+    line-height: 35px;
+    letter-spacing: -0.08em;
+    margin-bottom: 10px;
+  }
+  &__item-text {
+    font-size: 27px;
+    line-height: 33px;
+    letter-spacing: -0.08em;
+    @extend %roboto-300;
+    margin-bottom: 10px;
+  }
+  &__item-link {
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid #EBE9E3;
+    font-size: 26px;
+    line-height: 30px;
+    @extend %roboto-500;
+    margin-top: 50px;
   }
 }
 
@@ -239,6 +361,17 @@
     color: #404040;
     letter-spacing: -0.08em;
     margin-bottom: 15px;
+    position: relative;
+    padding-top: 5px;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 186px;
+      height: 1px;
+      background-color: #000;
+      top: 0px;
+      left: 0px;
+    }
   }
   &__subtitle {
     color: rgba(64, 64, 64, 0.7);
@@ -306,6 +439,16 @@
   &__title {
     color: #ebe9e3;
     letter-spacing: -0.08em;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 180px;
+      height: 1px;
+      background-color: #EBE9E3;
+      top: -5px;
+      left: 0;
+    }
   }
   &__inner {
     padding-top: 32px;

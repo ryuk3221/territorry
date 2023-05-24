@@ -21,14 +21,16 @@ const menuBtn = document.querySelector('.header__burger');
 
 let x = false;
 menuBtn.onclick = function() {
+  document.querySelector('.burger-span1').classList.toggle('burger-span1--active');
+  document.querySelector('.burger-span3').classList.toggle('burger-span2--active');
   if (x === false) {
     document.querySelector('.nav').style.transform = 'translateY(0)';
-    document.querySelector('.header__burger-img').setAttribute('src', 'images/close-burger.svg');
+    document.querySelector('.burger-span2').style.width = '0';
     x = true;
   }
   else {
     document.querySelector('.nav').style.transform = 'translateY(-100%)';
-    document.querySelector('.header__burger-img').setAttribute('src', 'images/burger.svg')
+    document.querySelector('.burger-span2').style.width = '40px';
     x = false;
   }
 }
@@ -42,17 +44,22 @@ new Swiper('.swiper', {
   spaceBetween: 60,
 });
 
-// const aboutLink = document.querySelector('.about__link');
-// aboutLink.onclick = modalAboutShow;
+const aboutLink = document.querySelector('.about__footer-button');
+aboutLink.onclick = modalAboutShow;
 
 function modalAboutShow() {
   document.querySelector('#modal-about').classList.add('modal-show');
 }
 
-// const modalClose = document.querySelector('.modal-about__close');
-// modalClose.onclick = modalAboutClose;
-// const modalBtnCLose = document.querySelector('.modal-about__btn');
-// modalBtnCLose.onclick = modalAboutClose
+const modalClose = document.querySelector('.modal');
+modalClose.addEventListener('click', (event) => {
+  const target = event.target;
+  if (target.classList.contains('modal')) {
+    document.querySelector('#modal-about').classList.remove('modal-show');
+  }
+})
+const modalBtnCLose = document.querySelector('.modal-about__btn');
+modalBtnCLose.onclick = modalAboutClose
 
 function modalAboutClose() {
   document.querySelector('#modal-about').classList.remove('modal-show');

@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="css/style.min.css">
-  
-  <title>Территория аренда залов</title>
-</head>
-<body>
-  <header class="header" style="background-image: url(images/header-bg.jpg);">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <title>Территория аренда залов</title>
+  </head>
+  <body>
+    <header class="header" style="background-image: url(images/header-bg.jpg)">
       <div class="header__top">
         <nav class="nav">
           <ul class="menu">
             <li class="menu__item"><a class="menu__link" href="#">о нас</a></li>
             <li class="menu__item"><a class="menu__link" href="#">залы</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">отзывы</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">контакты</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">контакты</a>
+            </li>
           </ul>
         </nav>
-        <button class="header__burger">
-          <img class="header__burger-img" src="images/burger.svg" alt="menu-icon" >
+        <button class="header-top__burger header__burger" id="burger">
+          <span class="burger-span1"></span><span class="burger-span2"></span><span class="burger-span3"></span>
         </button>
         <div class="header__contacts">
           <a class="header__number" href="#">+7 (977) 445-28-71</a>
@@ -32,538 +37,774 @@
       </div>
       <div class="header__content">
         <h1 class="header__title">ТЕРРИТОРИЯ</h1>
-        <div class="header__subtitle">мечтай,   твори  и  наслаждайся</div>
+        <div class="header__subtitle">мечтай, твори и наслаждайся</div>
       </div>
-  </header>
-  <main class="main">
-    <section class="about">
-      <div class="container">
-        <h1 class="about__title title">АРЕНДА ЗАЛОВ В ЦЕНТРЕ МОСКВЫ</h1>
-        <h6 class="about__subtitle">7 минут от метро Пролетарская/Крестьянская застава</h6>
-        <div class="about__services-box">
-          <ul class="services-box__list">
-            <li class="services-box__item"><img src="images/icons/1.svg" alt=""><span>ПОЧАСОВАЯ АРЕНДА</span></li>
-            <li class="services-box__item"><img src="images/icons/2.svg" alt=""><span>ПОСТОЯННАЯ АРЕНДА</span></li>
-            <li class="services-box__item"><img src="images/icons/3.svg" alt=""><span>АРЕНДА НА ПОЛНЫЙ ДЕНЬ</span></li>
-            <li class="services-box__item"><img src="images/icons/4.svg" alt=""><span>СУБАРЕНДА (24.7)</span></li>
-          </ul>
-          <ul class="services-box__list">
-            <li class="services-box__item"><img src="images/icons/5.svg" alt=""><span>ТАНЦЫ</span></li>
-            <li class="services-box__item"><img src="images/icons/6.svg" alt=""><span>МЕРОПРИЯТИЯ</span></li>
-            <li class="services-box__item"><img src="images/icons/7.svg" alt=""><span>ЙОГАРАСТЯЖКА</span></li>
-            <li class="services-box__item"><img src="images/icons/8.svg" alt=""><span>ФОТОСЕССИИ</span></li>
-          </ul>
+    </header>
+    <main class="main">
+      <section class="about">
+        <div class="container">
+          <h1 class="about__title title">АРЕНДА ЗАЛОВ В ЦЕНТРЕ МОСКВЫ</h1>
+          <h6 class="about__subtitle">
+            7 минут от метро Пролетарская/Крестьянская застава
+          </h6>
+          <div class="about__services-box">
+            <ul class="services-box__list">
+              <li class="services-box__item">
+                <img src="images/icons/1.svg" alt="" /><span
+                  >ПОЧАСОВАЯ АРЕНДА</span
+                >
+              </li>
+              <li class="services-box__item">
+                <img src="images/icons/2.svg" alt="" /><span
+                  >ПОСТОЯННАЯ АРЕНДА</span
+                >
+              </li>
+              <li class="services-box__item">
+                <img src="images/icons/3.svg" alt="" /><span
+                  >АРЕНДА НА ПОЛНЫЙ ДЕНЬ</span
+                >
+              </li>
+              <li class="services-box__item">
+                <img src="images/icons/4.svg" alt="" /><span
+                  >СУБАРЕНДА (24.7)</span
+                >
+              </li>
+            </ul>
+            <ul class="services-box__list">
+              <li class="services-box__item">
+                <img src="images/icons/5.svg" alt="" /><span>ТАНЦЫ</span>
+              </li>
+              <li class="services-box__item">
+                <img src="images/icons/6.svg" alt="" /><span>МЕРОПРИЯТИЯ</span>
+              </li>
+              <li class="services-box__item">
+                <img src="images/icons/7.svg" alt="" /><span>ЙОГАРАСТЯЖКА</span>
+              </li>
+              <li class="services-box__item">
+                <img src="images/icons/8.svg" alt="" /><span>ФОТОСЕССИИ</span>
+              </li>
+            </ul>
+          </div>
+          <div class="about__footer">
+            <button class="about__footer-button" href="">
+              ПОДРОБНЕЕ О НАС
+            </button>
+            <div class="about__footer-box">
+              <span class="about__footer-text">ЗАЛОВ</span>
+              <span class="about__footer-num">15</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="catalog">
-      <div class="container">
-        <h1 class="catalog__title title">ЗАЛЫ</h1>
-      </div>
-      <div class="catalog__inner">
-
-        <div class="catalog__item">
-          <div class="catalog__item-img-box">
-            <img class="catalog__item-img" src="images/zal1.jpg" alt="zal1">
-            <!-- <img class="catalog__item-img" src="images/zal1.jpg" alt="zal1">
+      </section>
+      <section class="catalog">
+        <div class="container">
+          <h1 class="catalog__title title">ЗАЛЫ</h1>
+        </div>
+        <div class="catalog__inner">
+          <div class="catalog__item">
+            <div class="catalog__item-img-box">
+              <img class="catalog__item-img" src="images/zal1.jpg" alt="zal1" />
+              <!-- <img class="catalog__item-img" src="images/zal1.jpg" alt="zal1">
             <img class="catalog__item-img" src="images/zal1.jpg" alt="zal1"> -->
-          </div>
-          <h5 class="catalog__item-title">зал #1 Ethinic, 80 кв.м</h5>
-          <a class="catalog__item-link" href="#">Забронировать</a>
-          <button class="catalog__item-btn" id="zal1">подробнее</button>
-        </div>
-
-        <div class="catalog__item">
-          <div class="catalog__item-img-box">
-            <img class="catalog__item-img" src="images/zal2.jpg" alt="zal1">
-          </div>
-          <h5 class="catalog__item-title">зал #2 Classic, 75 кв.м</h5>
-          <a class="catalog__item-link" href="#">Забронировать</a>
-          <button class="catalog__item-btn" id="zal2">подробнее</button>
-        </div>
-
-        <div class="catalog__item">
-          <div class="catalog__item-img-box">
-            <img class="catalog__item-img" src="images/zal3.jpg" alt="zal1">
-          </div>
-          <h5 class="catalog__item-title">зал #3 Территория, 80 кв.м</h5>
-          <a class="catalog__item-link" href="#">Забронировать</a>
-          <button class="catalog__item-btn" id="zal3">подробнее</button>
-        </div>
-
-        <div class="catalog__item">
-          <div class="catalog__item-img-box">
-            <img class="catalog__item-img" src="images/zal4.jpg" alt="zal1">
-          </div>
-          <h5 class="catalog__item-title">зал #4 Black, 75 кв.м</h5>
-          <a class="catalog__item-link" href="#">Забронировать</a>
-          <button class="catalog__item-btn">подробнее</button>
-        </div>
-
-        <div class="catalog__item">
-          <div class="catalog__item-img-box">
-            <img class="catalog__item-img" src="images/zal5.jpg" alt="zal1">
-          </div>
-          <h5 class="catalog__item-title">зал #5 Loft, 80 кв.м</h5>
-          <a class="catalog__item-link" href="#">Забронировать</a>
-          <button class="catalog__item-btn">подробнее</button>
-        </div>
-
-        <div class="catalog__item">
-          <div class="catalog__item-img-box">
-            <img class="catalog__item-img" src="images/zal6.jpg" alt="zal1">
-          </div>
-          <h5 class="catalog__item-title">зал #6 Mini, 50 кв.м</h5>
-          <a class="catalog__item-link" href="#">Забронировать</a>
-          <button class="catalog__item-btn">подробнее</button>
-        </div>
-
-        <div class="catalog__item">
-          <div class="catalog__item-img-box">
-            <img class="catalog__item-img" src="images/zal7.jpg" alt="zal1">
-          </div>
-          <h5 class="catalog__item-title">зал #7 Red, 75 кв.м</h5>
-          <a class="catalog__item-link" href="#">Забронировать</a>
-          <button class="catalog__item-btn">подробнее</button>
-        </div>
-
-        <div class="catalog__item">
-          <div class="catalog__item-img-box">
-            <img class="catalog__item-img" src="images/zal8.jpg" alt="zal1">
-          </div>
-          <h5 class="catalog__item-title">зал Ballet, 75 кв.м</h5>
-          <a class="catalog__item-link" href="#">Забронировать</a>
-          <button class="catalog__item-btn">подробнее</button>
-        </div>
-
-        <div class="catalog__item">
-          <div class="catalog__item-img-box">
-            <img class="catalog__item-img" src="images/zal9.jpg" alt="zal1">
-          </div>
-          <h5 class="catalog__item-title">зал Hollywood, 75 кв.м</h5>
-          <a class="catalog__item-link" href="#">Забронировать</a>
-          <button class="catalog__item-btn">подробнее</button>
-        </div>
-
-        <div class="catalog__item">
-          <div class="catalog__item-img-box">
-            <img class="catalog__item-img" src="images/zal10.jpg" alt="zal1">
-          </div>
-          <h5 class="catalog__item-title">зал NeBox, 75 кв.м</h5>
-          <a class="catalog__item-link" href="#">Забронировать</a>
-          <button class="catalog__item-btn">подробнее</button>
-        </div>
-
-        <div class="catalog__item">
-          <div class="catalog__item-img-box">
-            <img class="catalog__item-img" src="images/zal11.jpg" alt="zal1">
-          </div>
-          <h5 class="catalog__item-title">зал White LOFT, 75 кв.м</h5>
-          <a class="catalog__item-link" href="#">Забронировать</a>
-          <button class="catalog__item-btn">подробнее</button>
-        </div>
-
-        <div class="catalog__item">
-          <div class="catalog__item-img-box">
-            <img class="catalog__item-img" src="images/zal12.jpg" alt="zal1">
-          </div>
-          <h5 class="catalog__item-title">зал Ballet mini, 50 кв.м</h5>
-          <a class="catalog__item-link" href="#">Забронировать</a>
-          <button class="catalog__item-btn">подробнее</button>
-        </div>
-
-        <div class="catalog__item">
-          <div class="catalog__item-img-box">
-            <img class="catalog__item-img" src="images/zal13.jpg" alt="zal1">
-          </div>
-          <h5 class="catalog__item-title">зал Stone, 65 кв.м</h5>
-          <a class="catalog__item-link" href="#">Забронировать</a>
-          <button class="catalog__item-btn">подробнее</button>
-        </div>
-
-        <div class="catalog__item">
-          <div class="catalog__item-img-box">
-            <img class="catalog__item-img" src="images/zal14.jpg" alt="zal1">
-          </div>
-          <h5 class="catalog__item-title">зал Gentle, 65 кв.м</h5>
-          <a class="catalog__item-link" href="#">Забронировать</a>
-          <button class="catalog__item-btn">подробнее</button>
-        </div>
-
-        <div class="catalog__item">
-          <div class="catalog__item-img-box">
-            <img class="catalog__item-img" src="images/zal15.jpg" alt="zal1">
-          </div>
-          <h5 class="catalog__item-title">зал Mini, 15 кв.м</h5>
-          <a class="catalog__item-link" href="#">Забронировать</a>
-          <button class="catalog__item-btn">подробнее</button>
-        </div>
-        
-      </div>
-    </section>
-    <section class="price">
-      <div class="container">
-        <h1 class="price__title title">ЦЕНЫ</h1>
-        <div class="price__inner">
-          
-        </div>
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="container">
-       
-        <div class="swiper">
-          <h1 class="reviews__title title">ОТЗЫВЫ</h1>
-          <h5 class="reviews__subtitle">НАМ ВАЖНО ВАШЕ МНЕНИЕ, ПОДЕЛИТЕСЬ ИМ</h5>
-          <div class="swiper-wrapper reviews__inner">
-
-            <div class="swiper-slide">
-              <div class="reviews__item-inner">
-                <p class="reviews__text">
-                  За приемлемые деньги получаешь в аренду зал в центре Москвы. Круто! Проводили мастер-класс по керамике 
-                  бла 
-                  бла 
-                  бла бла бла
-                </p>
-                <img class="reviews__icon" src="images/elya.png" alt="">
-              </div>
             </div>
-
-            <div class="swiper-slide">
-              <div class="reviews__item-inner">
-                <p class="reviews__text">
-                  За приемлемые деньги получаешь в аренду зал в центре Москвы. Круто! Проводили мастер-класс по керамике 
-                  бла 
-                  бла 
-                  бла бла бла
-                </p>
-                <img class="reviews__icon" src="images/reviews-icon2.png" alt="">
-              </div>
-            </div>
-            
-
-            <div class="swiper-slide">
-              <div class="reviews__item-inner">
-                <p class="reviews__text">
-                  За приемлемые деньги получаешь в аренду зал в центре Москвы. Круто! Проводили мастер-класс по керамике 
-                  бла 
-                  бла 
-                  бла бла бла
-                </p>
-                <img class="reviews__icon" src="images/reviews-icon3.png" alt="">
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="reviews__item-inner">
-                <p class="reviews__text">
-                  За приемлемые деньги получаешь в аренду зал в центре Москвы. Круто! Проводили мастер-класс по керамике 
-                  бла 
-                  бла 
-                  бла бла бла
-                </p>
-                <img class="reviews__icon" src="images/elya.png" alt="">
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="reviews__item-inner">
-                <p class="reviews__text">
-                  За приемлемые деньги получаешь в аренду зал в центре Москвы. Круто! Проводили мастер-класс по керамике 
-                  бла 
-                  бла 
-                  бла бла бла
-                </p>
-                <img class="reviews__icon" src="images/reviews-icon2.png" alt="">
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="reviews__item-inner">
-                <p class="reviews__text">
-                  За приемлемые деньги получаешь в аренду зал в центре Москвы. Круто! Проводили мастер-класс по керамике 
-                  бла 
-                  бла 
-                  бла бла бла
-                </p>
-                <img class="reviews__icon" src="images/reviews-icon3.png" alt="">
-              </div>
-            </div>
-            
-
-
+            <h5 class="catalog__item-title">зал #1 Ethinic, 80 кв.м</h5>
+            <a class="catalog__item-link" href="#">Забронировать</a>
+            <button class="catalog__item-btn" id="zal1">подробнее</button>
           </div>
-          <div class="swiper-button-next"><img class="reviews__slider-arrows" src="images/arrow-right-slide.svg" alt=""></div>
-          <div class="swiper-button-prev"><img class="reviews__slider-arrows" src="images/arrow-left-slide.svg" alt=""></div>
+
+          <div class="catalog__item">
+            <div class="catalog__item-img-box">
+              <img class="catalog__item-img" src="images/zal2.jpg" alt="zal1" />
+            </div>
+            <h5 class="catalog__item-title">зал #2 Classic, 75 кв.м</h5>
+            <a class="catalog__item-link" href="#">Забронировать</a>
+            <button class="catalog__item-btn" id="zal2">подробнее</button>
+          </div>
+
+          <div class="catalog__item">
+            <div class="catalog__item-img-box">
+              <img class="catalog__item-img" src="images/zal3.jpg" alt="zal1" />
+            </div>
+            <h5 class="catalog__item-title">зал #3 Территория, 80 кв.м</h5>
+            <a class="catalog__item-link" href="#">Забронировать</a>
+            <button class="catalog__item-btn" id="zal3">подробнее</button>
+          </div>
+
+          <div class="catalog__item">
+            <div class="catalog__item-img-box">
+              <img class="catalog__item-img" src="images/zal4.jpg" alt="zal1" />
+            </div>
+            <h5 class="catalog__item-title">зал #4 Black, 75 кв.м</h5>
+            <a class="catalog__item-link" href="#">Забронировать</a>
+            <button class="catalog__item-btn">подробнее</button>
+          </div>
+
+          <div class="catalog__item">
+            <div class="catalog__item-img-box">
+              <img class="catalog__item-img" src="images/zal5.jpg" alt="zal1" />
+            </div>
+            <h5 class="catalog__item-title">зал #5 Loft, 80 кв.м</h5>
+            <a class="catalog__item-link" href="#">Забронировать</a>
+            <button class="catalog__item-btn">подробнее</button>
+          </div>
+
+          <div class="catalog__item">
+            <div class="catalog__item-img-box">
+              <img class="catalog__item-img" src="images/zal6.jpg" alt="zal1" />
+            </div>
+            <h5 class="catalog__item-title">зал #6 Mini, 50 кв.м</h5>
+            <a class="catalog__item-link" href="#">Забронировать</a>
+            <button class="catalog__item-btn">подробнее</button>
+          </div>
+
+          <div class="catalog__item">
+            <div class="catalog__item-img-box">
+              <img class="catalog__item-img" src="images/zal7.jpg" alt="zal1" />
+            </div>
+            <h5 class="catalog__item-title">зал #7 Red, 75 кв.м</h5>
+            <a class="catalog__item-link" href="#">Забронировать</a>
+            <button class="catalog__item-btn">подробнее</button>
+          </div>
+
+          <div class="catalog__item">
+            <div class="catalog__item-img-box">
+              <img class="catalog__item-img" src="images/zal8.jpg" alt="zal1" />
+            </div>
+            <h5 class="catalog__item-title">зал Ballet, 75 кв.м</h5>
+            <a class="catalog__item-link" href="#">Забронировать</a>
+            <button class="catalog__item-btn">подробнее</button>
+          </div>
+
+          <div class="catalog__item">
+            <div class="catalog__item-img-box">
+              <img class="catalog__item-img" src="images/zal9.jpg" alt="zal1" />
+            </div>
+            <h5 class="catalog__item-title">зал Hollywood, 75 кв.м</h5>
+            <a class="catalog__item-link" href="#">Забронировать</a>
+            <button class="catalog__item-btn">подробнее</button>
+          </div>
+
+          <div class="catalog__item">
+            <div class="catalog__item-img-box">
+              <img
+                class="catalog__item-img"
+                src="images/zal10.jpg"
+                alt="zal1"
+              />
+            </div>
+            <h5 class="catalog__item-title">зал NeBox, 75 кв.м</h5>
+            <a class="catalog__item-link" href="#">Забронировать</a>
+            <button class="catalog__item-btn">подробнее</button>
+          </div>
+
+          <div class="catalog__item">
+            <div class="catalog__item-img-box">
+              <img
+                class="catalog__item-img"
+                src="images/zal11.jpg"
+                alt="zal1"
+              />
+            </div>
+            <h5 class="catalog__item-title">зал White LOFT, 75 кв.м</h5>
+            <a class="catalog__item-link" href="#">Забронировать</a>
+            <button class="catalog__item-btn">подробнее</button>
+          </div>
+
+          <div class="catalog__item">
+            <div class="catalog__item-img-box">
+              <img
+                class="catalog__item-img"
+                src="images/zal12.jpg"
+                alt="zal1"
+              />
+            </div>
+            <h5 class="catalog__item-title">зал Ballet mini, 50 кв.м</h5>
+            <a class="catalog__item-link" href="#">Забронировать</a>
+            <button class="catalog__item-btn">подробнее</button>
+          </div>
+
+          <div class="catalog__item">
+            <div class="catalog__item-img-box">
+              <img
+                class="catalog__item-img"
+                src="images/zal13.jpg"
+                alt="zal1"
+              />
+            </div>
+            <h5 class="catalog__item-title">зал Stone, 65 кв.м</h5>
+            <a class="catalog__item-link" href="#">Забронировать</a>
+            <button class="catalog__item-btn">подробнее</button>
+          </div>
+
+          <div class="catalog__item">
+            <div class="catalog__item-img-box">
+              <img
+                class="catalog__item-img"
+                src="images/zal14.jpg"
+                alt="zal1"
+              />
+            </div>
+            <h5 class="catalog__item-title">зал Gentle, 65 кв.м</h5>
+            <a class="catalog__item-link" href="#">Забронировать</a>
+            <button class="catalog__item-btn">подробнее</button>
+          </div>
+
+          <div class="catalog__item">
+            <div class="catalog__item-img-box">
+              <img
+                class="catalog__item-img"
+                src="images/zal15.jpg"
+                alt="zal1"
+              />
+            </div>
+            <h5 class="catalog__item-title">зал Mini, 15 кв.м</h5>
+            <a class="catalog__item-link" href="#">Забронировать</a>
+            <button class="catalog__item-btn">подробнее</button>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="contact">
-      <div class="container">
-        <h1 class="contact__title title">КОНТАКТЫ</h1>
-        <div class="contact__inner">
-          <div class="contact__item">
-            <span class="contact__num">24/7</span>
-            <span class="contact__text">РАБОТАЕМ ПО ВАШЕМУ ЗАПРОСУ</span>
-          </div>
-          <div class="contact__item">
-            <div class="contact__item-box">
-              <img class="contact__icon" src="images/geo-icon.svg" alt="">
-              <div class="contact__text-box">
-                <span class="contact__item-text">МОСКВА, </span>
-                <span class="contact__item-text">УЛ. КРУТИЦКАЯ, Д. 9 С. 1</span>
-              </div>
+      </section>
+      <section class="price">
+        <div class="container">
+          <h1 class="price__title title">ЦЕНЫ</h1>
+          <div class="price__inner">
+            <div class="price__item">
+              <img class="price__item-img" src="./images/icons/people.svg" alt="">
+              <h5 class="price__item-title">ИНДИВИДУАЛЬНЫЕ ЗАНЯТИЯ</h5>
+              <p class="price__item-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <p class="price__item-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <p class="price__item-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <p class="price__item-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <a class="price__item-link" href="">Забронировать</a>
             </div>
-            <div class="contact__item-box">
-              <img class="contact__icon" src="images/mail-icon.svg" alt="">
-              <div class="contact__text-box">
-                <span class="contact__item-text">+7 (977) 445-28-71</span>
-                <span class="contact__item-text">EVELYNVLASENKO@GMAIL.COM</span>
-              </div>
+            <div class="price__item">
+              <img class="price__item-img" src="./images/icons/people1.svg" alt="">
+              <h5 class="price__item-title">ИНДИВИДУАЛЬНЫЕ ЗАНЯТИЯ</h5>
+              <p class="price__item-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <p class="price__item-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <p class="price__item-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <p class="price__item-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <a class="price__item-link" href="">Забронировать</a>
+            </div>
+            <div class="price__item">
+              <img class="price__item-img" src="./images/icons/people1.svg" alt="">
+              <h5 class="price__item-title">ИНДИВИДУАЛЬНЫЕ ЗАНЯТИЯ</h5>
+              <p class="price__item-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <p class="price__item-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <p class="price__item-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <p class="price__item-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <a class="price__item-link" href="">Забронировать</a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <iframe  src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae5062ac3e34b6eeb35303a7d3ecec8d4b494f6ab8d63b1a5e76a7032d00e9b90&amp;source=constructor" width="100%" height="623" frameborder="0"></iframe>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <div class="swiper">
+            <h1 class="reviews__title title">ОТЗЫВЫ</h1>
+            <h5 class="reviews__subtitle">
+              НАМ ВАЖНО ВАШЕ МНЕНИЕ, ПОДЕЛИТЕСЬ ИМ
+            </h5>
+            <div class="swiper-wrapper reviews__inner">
+              <div class="swiper-slide">
+                <div class="reviews__item-inner">
+                  <p class="reviews__text">
+                    За приемлемые деньги получаешь в аренду зал в центре Москвы.
+                    Круто! Проводили мастер-класс по керамике бла бла бла бла
+                    бла
+                  </p>
+                  <img class="reviews__icon" src="images/elya.png" alt="" />
+                </div>
+              </div>
 
-    <div class="modal" id="modal-about">
-      <a class="modal-about__close"></a>
-      <div class="modal-about">
-        <button class="modal-about__btn"><img class="modal-about__icon" src="images/modal-close.svg" alt=""></button>
-        <div class="modal-about__top">
-          <h1 class="modal-about__title"><span>#</span>О НАС</h1>
-          <h2 class="modal-about__subtitle"><span>ТЕРРИТОРИЯ — </span>это 15 залов в стиле лофт в центре Москвы.</h2>
-          <div class="modal-about__top-textbox">
-            <p class="modal-about__top-text">
-              Мы создали все условия для занятий танцами, йогой, актерским мастерством и для проведения ваших мастер-классов, праздников и мероприятий разного характера.
-            </p>
-            <p class="modal-about__top-text">
-              Нас выбирают крупные школы танцев и частные хореографы, артисты и знаменитости, фотографы и клипмейкеры. С нами комфортно сотрудничать благодаря гибким условиям аренды и спецпредложениям для новых и постоянных посетителей.
-            </p>
-            <p class="modal-about__top-text">
-              Мы рады пригласить вас в нашу Территорию, чтобы поделиться нашей уникальной ламповой атмосферой творчества и уюта, которое позволит привлекать больше учеников и успешно развивать свое направление!
-            </p>
+              <div class="swiper-slide">
+                <div class="reviews__item-inner">
+                  <p class="reviews__text">
+                    За приемлемые деньги получаешь в аренду зал в центре Москвы.
+                    Круто! Проводили мастер-класс по керамике бла бла бла бла
+                    бла
+                  </p>
+                  <img
+                    class="reviews__icon"
+                    src="images/reviews-icon2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="reviews__item-inner">
+                  <p class="reviews__text">
+                    За приемлемые деньги получаешь в аренду зал в центре Москвы.
+                    Круто! Проводили мастер-класс по керамике бла бла бла бла
+                    бла
+                  </p>
+                  <img
+                    class="reviews__icon"
+                    src="images/reviews-icon3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="reviews__item-inner">
+                  <p class="reviews__text">
+                    За приемлемые деньги получаешь в аренду зал в центре Москвы.
+                    Круто! Проводили мастер-класс по керамике бла бла бла бла
+                    бла
+                  </p>
+                  <img class="reviews__icon" src="images/elya.png" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="reviews__item-inner">
+                  <p class="reviews__text">
+                    За приемлемые деньги получаешь в аренду зал в центре Москвы.
+                    Круто! Проводили мастер-класс по керамике бла бла бла бла
+                    бла
+                  </p>
+                  <img
+                    class="reviews__icon"
+                    src="images/reviews-icon2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="reviews__item-inner">
+                  <p class="reviews__text">
+                    За приемлемые деньги получаешь в аренду зал в центре Москвы.
+                    Круто! Проводили мастер-класс по керамике бла бла бла бла
+                    бла
+                  </p>
+                  <img
+                    class="reviews__icon"
+                    src="images/reviews-icon3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next">
+              <img
+                class="reviews__slider-arrows"
+                src="images/arrow-right-slide.svg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-button-prev">
+              <img
+                class="reviews__slider-arrows"
+                src="images/arrow-left-slide.svg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-        <div class="modal-about__bot">
-          <div class="modal-about__bot-item">
-            <h3 class="modal-about__bot-title">ДЛЯ ТВОРЧЕСТВА</h3>
-            <div class="modal-about__text">
-              <span>— зеркала в пол для обзора для всей группы</span>
-              <span>— профессиональный инвентарь для йоги и стретчинга (кирпичи, коврики, станки и др.)</span>
-              <span>— качественное напольное покрытие </span>
-              <span>— танцевальный линолеум </span>
-              <span>— мощные акустические системы со светомузыкой </span>
-              <span>— неоновые лампы RGB</span>
-              <span>— женская и мужская раздевалки</span>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <h1 class="contact__title title">КОНТАКТЫ</h1>
+          <div class="contact__inner">
+            <div class="contact__item">
+              <span class="contact__num">24/7</span>
+              <span class="contact__text">РАБОТАЕМ ПО ВАШЕМУ ЗАПРОСУ</span>
             </div>
-          </div>
-          <div class="modal-about__bot-item">
-            <h3 class="modal-about__bot-title">ДЛЯ ВАС</h3>
-            <div class="modal-about__text">
-              <span>— высота потолков 3,3 - 3,5 метро</span>
-              <span>— бесплатная парковка на 25 машиномест</span>
-              <span>— кафе, где можно выпить кофе и даже перекусить</span>
-              <span>— раздельные зоны отдыха/ожидания</span>
-              <span>— воспроизведение с любого носителя (AUX, USB, Bluetooth и др.)</span>
-            </div>
-          </div>
-          <div class="modal-about__bot-item">
-            <h3 class="modal-about__bot-title">ДЛЯ МЕРОПРИЯТИЙ</h3>
-            <div class="modal-about__text">
-              <span>— стулья, столы, барные столы и стулья, вешалки для одежды</span>
-              <span>— проекторы и экраны — микрофоны</span>
-              <span>— проекторы и экраны</span>
-              <span>— микрофоны</span>
-              <span>- флипчарты с бумагой и маркерами</span>
-              <span>— кулеры с горячей/холодной водой</span>
+            <div class="contact__item">
+              <div class="contact__item-box">
+                <img class="contact__icon" src="images/geo-icon.svg" alt="" />
+                <div class="contact__text-box">
+                  <span class="contact__item-text">МОСКВА, </span>
+                  <span class="contact__item-text"
+                    >УЛ. КРУТИЦКАЯ, Д. 9 С. 1</span
+                  >
+                </div>
+              </div>
+              <div class="contact__item-box">
+                <img class="contact__icon" src="images/mail-icon.svg" alt="" />
+                <div class="contact__text-box">
+                  <span class="contact__item-text">+7 (977) 445-28-71</span>
+                  <span class="contact__item-text"
+                    >EVELYNVLASENKO@GMAIL.COM</span
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae5062ac3e34b6eeb35303a7d3ecec8d4b494f6ab8d63b1a5e76a7032d00e9b90&amp;source=constructor"
+        width="100%"
+        height="623"
+        frameborder="0"
+      ></iframe>
 
+      <div class="modal" id="modal-about">
 
-    <div class="modal-zal" data-zal="zal1">
-      <div class="modal-zal__content">
-        <button class="modal-zal__close-btn"><img class="modal-about__icon" src="images/modal-close.svg" alt=""></button>
-        <h1 class="modal-zal__title"><span>#1</span>ETHNIC</h1>
-        <div class="modal-zal__inner">
-          <div class="modal-zal__slider-box">
-            <div class="modal-zal__main-slider">
-              <div class="main-slider__img-box">
-                <img class="main-slider__img" src="images/modal-zal1.jpg" alt="">
-              </div>
-              <div class="main-slider__img-box">
-                <img class="main-slider__img" src="images/modal-zal1.jpg" alt="">
-              </div>
-              <div class="main-slider__img-box">
-                <img class="main-slider__img" src="images/modal-zal1.jpg" alt="">
-              </div>
-            </div>
-            <div class="modal-zal__sub-slider">
-              <div class="sub-slider__img-box">
-                <img class="sub-slider__img" src="images/modal-zal1.jpg" alt="">
-              </div>
-              <div class="sub-slider__img-box">
-                <img class="sub-slider__img" src="images/modal-zal1.jpg" alt="">
-              </div>
-              <div class="sub-slider__img-box">
-                <img class="sub-slider__img" src="images/modal-zal1.jpg" alt="">
-              </div>
+        <div class="modal-about">
+          <button class="modal-about__btn">
+            <img
+              class="modal-about__icon"
+              src="images/modal-close.svg"
+              alt=""
+            />
+          </button>
+          <div class="modal-about__top">
+            <h1 class="modal-about__title"><span>#</span>О НАС</h1>
+            <h2 class="modal-about__subtitle">
+              <span>ТЕРРИТОРИЯ — </span>это 15 залов в стиле лофт в центре
+              Москвы.
+            </h2>
+            <div class="modal-about__top-textbox">
+              <p class="modal-about__top-text">
+                Мы создали все условия для занятий танцами, йогой, актерским
+                мастерством и для проведения ваших мастер-классов, праздников и
+                мероприятий разного характера.
+              </p>
+              <p class="modal-about__top-text">
+                Нас выбирают крупные школы танцев и частные хореографы, артисты
+                и знаменитости, фотографы и клипмейкеры. С нами комфортно
+                сотрудничать благодаря гибким условиям аренды и спецпредложениям
+                для новых и постоянных посетителей.
+              </p>
+              <p class="modal-about__top-text">
+                Мы рады пригласить вас в нашу Территорию, чтобы поделиться нашей
+                уникальной ламповой атмосферой творчества и уюта, которое
+                позволит привлекать больше учеников и успешно развивать свое
+                направление!
+              </p>
             </div>
           </div>
-          <div class="modal-zal__info">
-            <div class="modal-zal__info-title">
-              <span>80</span>              
-              кв.m
-            </div>
-            <div class="modal-zal__info-title">
-              <span>2</span>              
-              этаж
-            </div>
-            <p class="modal-zal__info-price">от 600 до 2500</p>
-            <p class="modal-zal__info-desc">просторный зал, выполнен в тёплых тонах</p>
-            <a class="modal-zal__reserve" href="#">Забронировать</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="modal-zal" data-zal="zal2">
-      <div class="modal-zal__content">
-        <botton class="modal-zal__close-btn"><img class="modal-about__icon" src="images/modal-close.svg" alt=""></botton>
-        <h1 class="modal-zal__title"><span>#2</span>ETHNIC</h1>
-        <div class="modal-zal__inner">
-          <div class="modal-zal__slider-box">
-            <div class="modal-zal__main-slider">
-              <div class="main-slider__img-box">
-                <img class="main-slider__img" src="images/modal-zal2.jpg" alt="">
-              </div>
-              <div class="main-slider__img-box">
-                <img class="main-slider__img" src="images/modal-zal2.jpg" alt="">
-              </div>
-              <div class="main-slider__img-box">
-                <img class="main-slider__img" src="images/modal-zal2.jpg" alt="">
+          <div class="modal-about__bot">
+            <div class="modal-about__bot-item">
+              <h3 class="modal-about__bot-title">ДЛЯ ТВОРЧЕСТВА</h3>
+              <div class="modal-about__text">
+                <span>— зеркала в пол для обзора для всей группы</span>
+                <span
+                  >— профессиональный инвентарь для йоги и стретчинга (кирпичи,
+                  коврики, станки и др.)</span
+                >
+                <span>— качественное напольное покрытие </span>
+                <span>— танцевальный линолеум </span>
+                <span>— мощные акустические системы со светомузыкой </span>
+                <span>— неоновые лампы RGB</span>
+                <span>— женская и мужская раздевалки</span>
               </div>
             </div>
-            <div class="modal-zal__sub-slider">
-              <div class="sub-slider__img-box">
-                <img class="sub-slider__img" src="images/modal-zal2.jpg" alt="">
-              </div>
-              <div class="sub-slider__img-box">
-                <img class="sub-slider__img" src="images/modal-zal2.jpg" alt="">
-              </div>
-              <div class="sub-slider__img-box">
-                <img class="sub-slider__img" src="images/modal-zal2.jpg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="modal-zal__info">
-            <div class="modal-zal__info-title">
-              <span>80</span>              
-              кв.m
-            </div>
-            <div class="modal-zal__info-title">
-              <span>2</span>              
-              этаж
-            </div>
-            <p class="modal-zal__info-price">от 600 до 2500</p>
-            <p class="modal-zal__info-desc">просторный зал, выполнен в тёплых тонах</p>
-            <a class="modal-zal__reserve" href="#">Забронировать</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="modal-zal" data-zal="zal3">
-      <div class="modal-zal__content">
-        <botton class="modal-zal__close-btn"><img class="modal-about__icon" src="images/modal-close.svg" alt=""></botton>
-        <h1 class="modal-zal__title"><span>#3</span>ETHNIC</h1>
-        <div class="modal-zal__inner">
-          <div class="modal-zal__slider-box">
-            <div class="modal-zal__main-slider">
-              <div class="main-slider__img-box">
-                <img class="main-slider__img" src="images/modal-zal3.jpg" alt="">
-              </div>
-              <div class="main-slider__img-box">
-                <img class="main-slider__img" src="images/modal-zal3.jpg" alt="">
-              </div>
-              <div class="main-slider__img-box">
-                <img class="main-slider__img" src="images/modal-zal3.jpg" alt="">
+            <div class="modal-about__bot-item">
+              <h3 class="modal-about__bot-title">ДЛЯ ВАС</h3>
+              <div class="modal-about__text">
+                <span>— высота потолков 3,3 - 3,5 метро</span>
+                <span>— бесплатная парковка на 25 машиномест</span>
+                <span>— кафе, где можно выпить кофе и даже перекусить</span>
+                <span>— раздельные зоны отдыха/ожидания</span>
+                <span
+                  >— воспроизведение с любого носителя (AUX, USB, Bluetooth и
+                  др.)</span
+                >
               </div>
             </div>
-            <div class="modal-zal__sub-slider">
-              <div class="sub-slider__img-box">
-                <img class="sub-slider__img" src="images/modal-zal1.jpg" alt="">
-              </div>
-              <div class="sub-slider__img-box">
-                <img class="sub-slider__img" src="images/modal-zal1.jpg" alt="">
-              </div>
-              <div class="sub-slider__img-box">
-                <img class="sub-slider__img" src="images/modal-zal1.jpg" alt="">
+            <div class="modal-about__bot-item">
+              <h3 class="modal-about__bot-title">ДЛЯ МЕРОПРИЯТИЙ</h3>
+              <div class="modal-about__text">
+                <span
+                  >— стулья, столы, барные столы и стулья, вешалки для
+                  одежды</span
+                >
+                <span>— проекторы и экраны — микрофоны</span>
+                <span>— проекторы и экраны</span>
+                <span>— микрофоны</span>
+                <span>- флипчарты с бумагой и маркерами</span>
+                <span>— кулеры с горячей/холодной водой</span>
               </div>
             </div>
-          </div>
-          <div class="modal-zal__info">
-            <div class="modal-zal__info-title">
-              <span>80</span>              
-              кв.m
-            </div>
-            <div class="modal-zal__info-title">
-              <span>2</span>              
-              этаж
-            </div>
-            <p class="modal-zal__info-price">от 600 до 2500</p>
-            <p class="modal-zal__info-desc">просторный зал, выполнен в тёплых тонах</p>
-            <a class="modal-zal__reserve" href="#">Забронировать</a>
           </div>
         </div>
       </div>
-    </div>
 
-
-
-
-  </main>
-  <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__container">
-        <div class="footer__item">
-          <h6 class="footer__item-title">ТЕРРИТОРИЯ</h6>
-          <span class="footer__item-text">мечтай, твори и наслаждайся в центре Mосквы с нами</span>
-        </div>
-        <div class="footer__item">
-          <h5 class="footer__item-subtitle">ПОГОВОРИМ?</h5>
-          <div class="footer__contact-box">
-            <div class="footer__contact-label">
-              <img class="footer__contact-icon" src="images/footer-phone.svg" alt="">
-              <a href="#">+7 (977) 445-28-71</a>
+      <div class="modal-zal" data-zal="zal1">
+        <div class="modal-zal__content">
+          <button class="modal-zal__close-btn">
+            <img
+              class="modal-about__icon"
+              src="images/modal-close.svg"
+              alt=""
+            />
+          </button>
+          <h1 class="modal-zal__title"><span>#1</span>ETHNIC</h1>
+          <div class="modal-zal__inner">
+            <div class="modal-zal__slider-box">
+              <div class="modal-zal__main-slider">
+                <div class="main-slider__img-box">
+                  <img
+                    class="main-slider__img"
+                    src="images/modal-zal1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="main-slider__img-box">
+                  <img
+                    class="main-slider__img"
+                    src="images/modal-zal1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="main-slider__img-box">
+                  <img
+                    class="main-slider__img"
+                    src="images/modal-zal1.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="modal-zal__sub-slider">
+                <div class="sub-slider__img-box">
+                  <img
+                    class="sub-slider__img"
+                    src="images/modal-zal1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="sub-slider__img-box">
+                  <img
+                    class="sub-slider__img"
+                    src="images/modal-zal1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="sub-slider__img-box">
+                  <img
+                    class="sub-slider__img"
+                    src="images/modal-zal1.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
-            <div class="footer__contact-label">
-              <img class="footer__contact-icon" src="images/footer-mail.svg" alt="">
-              <a href="">evelynvlasenko@gmail.com</a>
+            <div class="modal-zal__info">
+              <div class="modal-zal__info-title">
+                <span>80</span>
+                кв.m
+              </div>
+              <div class="modal-zal__info-title">
+                <span>2</span>
+                этаж
+              </div>
+              <p class="modal-zal__info-price">от 600 до 2500</p>
+              <p class="modal-zal__info-desc">
+                просторный зал, выполнен в тёплых тонах
+              </p>
+              <a class="modal-zal__reserve" href="#">Забронировать</a>
             </div>
-          </div>
-        </div>
-        <div class="footer__item">
-          <h6 class="footer__item-subtitle">МЫ В СОЦСЕТЯХ</h6>
-          <div class="footer__social-box">
-            <a class="footer__link" href="#"><img class="footer__sicial-icon" src="images/vk.svg" alt=""></a>
-            <a class="footer__link" href="#"><img class="footer__sicial-icon" src="images/inst.svg" alt=""></a>
-            <a class="footer__link" href="#"><img class="footer__sicial-icon" src="images/tg.svg" alt=""></a>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="js/main.min.js"></script>
 
-  
-</body>
+      <div class="modal-zal" data-zal="zal2">
+        <div class="modal-zal__content">
+          <button class="modal-zal__close-btn">
+            <img
+              class="modal-about__icon"
+              src="images/modal-close.svg"
+              alt=""
+            />
+          </button>
+          <h1 class="modal-zal__title"><span>#2</span>ETHNIC</h1>
+          <div class="modal-zal__inner">
+            <div class="modal-zal__slider-box">
+              <div class="modal-zal__main-slider">
+                <div class="main-slider__img-box">
+                  <img
+                    class="main-slider__img"
+                    src="images/modal-zal2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="main-slider__img-box">
+                  <img
+                    class="main-slider__img"
+                    src="images/modal-zal2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="main-slider__img-box">
+                  <img
+                    class="main-slider__img"
+                    src="images/modal-zal2.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="modal-zal__sub-slider">
+                <div class="sub-slider__img-box">
+                  <img
+                    class="sub-slider__img"
+                    src="images/modal-zal2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="sub-slider__img-box">
+                  <img
+                    class="sub-slider__img"
+                    src="images/modal-zal2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="sub-slider__img-box">
+                  <img
+                    class="sub-slider__img"
+                    src="images/modal-zal2.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="modal-zal__info">
+              <div class="modal-zal__info-title">
+                <span>80</span>
+                кв.m
+              </div>
+              <div class="modal-zal__info-title">
+                <span>2</span>
+                этаж
+              </div>
+              <p class="modal-zal__info-price">от 600 до 2500</p>
+              <p class="modal-zal__info-desc">
+                просторный зал, выполнен в тёплых тонах
+              </p>
+              <a class="modal-zal__reserve" href="#">Забронировать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-zal" data-zal="zal3">
+        <div class="modal-zal__content">
+          <button class="modal-zal__close-btn">
+            <img
+              class="modal-about__icon"
+              src="images/modal-close.svg"
+              alt=""
+            />
+          </button>
+          <h1 class="modal-zal__title"><span>#3</span>ETHNIC</h1>
+          <div class="modal-zal__inner">
+            <div class="modal-zal__slider-box">
+              <div class="modal-zal__main-slider">
+                <div class="main-slider__img-box">
+                  <img
+                    class="main-slider__img"
+                    src="images/modal-zal3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="main-slider__img-box">
+                  <img
+                    class="main-slider__img"
+                    src="images/modal-zal3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="main-slider__img-box">
+                  <img
+                    class="main-slider__img"
+                    src="images/modal-zal3.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="modal-zal__sub-slider">
+                <div class="sub-slider__img-box">
+                  <img
+                    class="sub-slider__img"
+                    src="images/modal-zal1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="sub-slider__img-box">
+                  <img
+                    class="sub-slider__img"
+                    src="images/modal-zal1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="sub-slider__img-box">
+                  <img
+                    class="sub-slider__img"
+                    src="images/modal-zal1.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="modal-zal__info">
+              <div class="modal-zal__info-title">
+                <span>80</span>
+                кв.m
+              </div>
+              <div class="modal-zal__info-title">
+                <span>2</span>
+                этаж
+              </div>
+              <p class="modal-zal__info-price">от 600 до 2500</p>
+              <p class="modal-zal__info-desc">
+                просторный зал, выполнен в тёплых тонах
+              </p>
+              <a class="modal-zal__reserve" href="#">Забронировать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__container">
+          <div class="footer__item">
+            <h6 class="footer__item-title">ТЕРРИТОРИЯ</h6>
+            <span class="footer__item-text"
+              >мечтай, твори и наслаждайся в центре Mосквы с нами</span
+            >
+          </div>
+          <div class="footer__item">
+            <h5 class="footer__item-subtitle">ПОГОВОРИМ?</h5>
+            <div class="footer__contact-box">
+              <div class="footer__contact-label">
+                <img
+                  class="footer__contact-icon"
+                  src="images/footer-phone.svg"
+                  alt=""
+                />
+                <a href="#">+7 (977) 445-28-71</a>
+              </div>
+              <div class="footer__contact-label">
+                <img
+                  class="footer__contact-icon"
+                  src="images/footer-mail.svg"
+                  alt=""
+                />
+                <a href="">evelynvlasenko@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__item">
+            <h6 class="footer__item-subtitle">МЫ В СОЦСЕТЯХ</h6>
+            <div class="footer__social-box">
+              <a class="footer__link" href="#"
+                ><img class="footer__sicial-icon" src="images/vk.svg" alt=""
+              /></a>
+              <a class="footer__link" href="#"
+                ><img class="footer__sicial-icon" src="images/tg.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
 </html>
