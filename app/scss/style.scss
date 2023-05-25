@@ -795,3 +795,10 @@
     width: 100%;
   }
 }
+
+.fancybox-caption__body {
+  letter-spacing: -0.03em;
+    font-size: 22px;
+    line-height: 46px;
+    @extend %roboto-500;
+}
