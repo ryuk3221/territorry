@@ -1,3 +1,7 @@
+document.querySelectorAll('.catalog__item-title').forEach((el) => {
+  el.innerHTML = 'зал #10 Территория';
+})
+
 $(function(){
   $('.modal-zal__main-slider').slick({
     slidesToShow: 1,
@@ -24,12 +28,12 @@ menuBtn.onclick = function() {
   document.querySelector('.burger-span1').classList.toggle('burger-span1--active');
   document.querySelector('.burger-span3').classList.toggle('burger-span2--active');
   if (x === false) {
-    document.querySelector('.nav').style.transform = 'translateY(0)';
+    document.querySelector('.nav').classList.toggle('nav--active');
     document.querySelector('.burger-span2').style.width = '0';
     x = true;
   }
   else {
-    document.querySelector('.nav').style.transform = 'translateY(-100%)';
+    document.querySelector('.nav').classList.toggle('nav--active');
     document.querySelector('.burger-span2').style.width = '40px';
     x = false;
   }
@@ -41,7 +45,21 @@ new Swiper('.swiper', {
     prevEl: '.swiper-button-prev'
   },
   slidesPerView: 3,
-  spaceBetween: 60,
+  spaceBetween: 40,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    650: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    
+  },
 });
 
 const aboutLink = document.querySelector('.about__footer-button');
@@ -100,3 +118,23 @@ modalZalCloseBtns.forEach(function(el) {
 document.querySelectorAll('.modal-zal').forEach(function(el){
   el.addEventListener('click', closeModalZal);
 })
+
+// let lastScroll = 0;
+// const header = document.querySelector('.header');
+
+// const scrollPosition = () => window.pageYOffset;
+// const containHide = () => header.classList.contains('header--hide');
+
+// window.addEventListener('scroll', () => {
+  
+//   let top = scrollPosition();
+//   if (top > lastScroll && !header.classList.contains('header--hide')) {
+//     //scroll down
+//     header.classList.add('header--hide');
+//   }
+//   else if (top < lastScroll && header.classList.contains('header--hide')) {
+//     header.classList.remove('header--hide');
+//     //scroll up
+//   }
+//   lastScroll = scrollPosition();
+// });

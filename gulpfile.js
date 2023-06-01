@@ -77,6 +77,6 @@ exports.scripts = scripts;
 exports.browsersync = browsersync;
 exports.images = images;
 exports.watching = watching;
-exports.build = series(images, build);
+exports.build = build;
 
 exports.default = parallel(styles,scripts,browsersync,watching)
